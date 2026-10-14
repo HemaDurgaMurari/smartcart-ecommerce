@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/* ---------- Products ---------- */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filters input,
+.filters select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.filters input {
+    flex: 1;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin-bottom: 8px;
+}
+
+.product-card > button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.product-card > button:hover {
+    background: #0056b3;
+}
+
+.product-card > button:disabled {
+    background: #dc3545;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* ---------- Cart ---------- */
+.cart {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item button {
+    background: #6f42c1;
+    color: white;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #563d7c;
+}
+
+.cart > button {
+    background: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cart > button:hover {
+    background: #b02a37;
+}
+
+/* ---------- Checkout ---------- */
+.checkout {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.checkout h2 {
+    text-align: center;
+}
+
+.checkout form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.checkout form div {
+    margin-bottom: 15px;
+}
+
+.checkout label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.checkout input,
+.checkout textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.checkout textarea {
+    height: 100px;
+}
+
+.checkout button {
+    background: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkout button:hover {
+    background: #218838;
+}
+
+/* ---------- Messages ---------- */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.form-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #343a40;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-links button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar-links button:hover {
+    background: #0056b3;
+}
+
+.welcome-user {
+    font-size: 14px;
+}
+
+/* ---------- Signin / Signup ---------- */
+.auth-container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.auth-container h2 {
+    text-align: center;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-container input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.auth-container button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.auth-container button:hover {
+    background: #0056b3;
+}
+
+/* ---------- Admin dashboard ---------- */
+.admin-section {
+    margin: 20px 0 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.product-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.product-form input,
+.product-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.product-form textarea {
+    grid-column: span 2;
+    min-height: 100px;
+}
+
+.product-form button {
+    grid-column: span 2;
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-form button:hover {
+    background: #218838;
+}
+
+.admin-product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.admin-product-buttons button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.admin-product-buttons button:last-child {
+    background: #dc3545;
+}
+
+.admin-product-buttons button:hover {
+    opacity: 0.85;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-form {
+        grid-template-columns: 1fr;
+    }
+
+    .product-form textarea,
+    .product-form button {
+        grid-column: span 1;
+    }
+}
